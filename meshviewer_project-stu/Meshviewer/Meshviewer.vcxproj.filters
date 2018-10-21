@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="头文件\core">
+      <UniqueIdentifier>{24567898-27f1-4d88-8443-777c22d72bae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\read_write">
+      <UniqueIdentifier>{da053c62-c098-47d6-8e78-2a7b55737657}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\extension">
+      <UniqueIdentifier>{2c41eec6-3cfb-40f4-bb2a-bc9bce66f8c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\core">
+      <UniqueIdentifier>{69c08de0-f3cc-4aa0-9149-513406785f42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\extension">
+      <UniqueIdentifier>{780efc8b-6c77-431e-9e4a-191ce442aecd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\read_write">
+      <UniqueIdentifier>{31058d4b-30e3-4caf-b355-22e9049709f4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="meshviewer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mesh\core\BaseHandle.cpp">
+      <Filter>源文件\core</Filter>
+    </ClCompile>
+    <ClCompile Include="mesh\core\KernelT.cpp">
+      <Filter>源文件\core</Filter>
+    </ClCompile>
+    <ClCompile Include="mesh\extension\ExKernelT.cpp">
+      <Filter>源文件\extension</Filter>
+    </ClCompile>
+    <ClCompile Include="mesh\read_write\read_write.cpp">
+      <Filter>源文件\read_write</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="mesh\core\InternalHandles.h">
+      <Filter>头文件\core</Filter>
+    </ClInclude>
+    <ClInclude Include="mesh\core\BaseHandle.h">
+      <Filter>头文件\core</Filter>
+    </ClInclude>
+    <ClInclude Include="mesh\core\InternalItems.h">
+      <Filter>头文件\core</Filter>
+    </ClInclude>
+    <ClInclude Include="mesh\core\InternalStatus.h">
+      <Filter>头文件\core</Filter>
+    </ClInclude>
+    <ClInclude Include="mesh\core\Vector3T.h">
+      <Filter>头文件\core</Filter>
+    </ClInclude>
+    <ClInclude Include="mesh\core\KernelT.h">
+      <Filter>头文件\core</Filter>
+    </ClInclude>
+    <ClInclude Include="mesh\extension\ExItems.h">
+      <Filter>头文件\extension</Filter>
+    </ClInclude>
+    <ClInclude Include="mesh\extension\ExKernelT.h">
+      <Filter>头文件\extension</Filter>
+    </ClInclude>
+    <ClInclude Include="mesh\read_write\read_write.h">
+      <Filter>头文件\read_write</Filter>
+    </ClInclude>
+    <ClInclude Include="MeshInterface.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="viewer\ViewerCallbacks.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="viewer\ViewerConstants.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="viewer\ViewerInterface.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="viewer\ViewerMaterials.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="viewer\ViewerMenu.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="viewer\ViewerTrackball.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
