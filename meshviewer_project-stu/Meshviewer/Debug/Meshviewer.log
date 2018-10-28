@@ -1,81 +1,83 @@
-﻿生成启动时间为 2018/10/21 23:37:15。
-     1>项目“E:\学习\计算机图形学\meshviewer_project-stu\Meshviewer\Meshviewer.vcxproj”在节点 2 上(Build 个目标)。
+﻿生成启动时间为 2018/10/28 12:40:49。
+     1>项目“E:\学习\计算机图形学\Final_Project_STU\meshviewer_project-stu\Meshviewer\Meshviewer.vcxproj”在节点 2 上(Build 个目标)。
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /IF:\Meshviewer\Meshviewer\mesh\read_write /IF:\Meshviewer\Meshviewer\mesh\extension /IF:\Meshviewer\Meshviewer\mesh\core /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt mesh\extension\ExKernelT.cpp meshviewer.cpp
-         meshviewer.cpp
-     1>e:\学习\计算机图形学\meshviewer_project-stu\meshviewer\viewer\viewercallbacks.h(88): warning C4838: 从“double”转换到“GLfloat”需要收缩转换
-     1>e:\学习\计算机图形学\meshviewer_project-stu\meshviewer\viewer\viewercallbacks.h(89): warning C4838: 从“double”转换到“GLfloat”需要收缩转换
-     1>e:\学习\计算机图形学\meshviewer_project-stu\meshviewer\viewer\viewercallbacks.h(90): warning C4838: 从“double”转换到“GLfloat”需要收缩转换
-     1>e:\学习\计算机图形学\meshviewer_project-stu\meshviewer\viewer\viewercallbacks.h(92): warning C4838: 从“double”转换到“GLfloat”需要收缩转换
-     1>e:\学习\计算机图形学\meshviewer_project-stu\meshviewer\viewer\viewercallbacks.h(93): warning C4838: 从“double”转换到“GLfloat”需要收缩转换
-     1>e:\学习\计算机图形学\meshviewer_project-stu\meshviewer\viewer\viewercallbacks.h(94): warning C4838: 从“double”转换到“GLfloat”需要收缩转换
-     1>e:\学习\计算机图形学\meshviewer_project-stu\meshviewer\mesh\extension\exkernelt.cpp(222): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\stdio.h(205): note: 参见“fopen”的声明
-         e:\学习\计算机图形学\meshviewer_project-stu\meshviewer\mesh\extension\exkernelt.cpp(219): note: 编译类 模板 成员函数“void MeshN::ExKernelT<MeshN::ExItems>::output_to_file(void)”时
-         e:\学习\计算机图形学\meshviewer_project-stu\meshviewer\meshinterface.h(83): note: 参见对正在编译的函数 模板 实例化“void MeshN::ExKernelT<MeshN::ExItems>::output_to_file(void)”的引用
-         e:\学习\计算机图形学\meshviewer_project-stu\meshviewer\meshinterface.h(30): note: 参见对正在编译的类 模板 实例化“MeshN::ExKernelT<MeshN::ExItems>”的引用
-     1>e:\学习\计算机图形学\meshviewer_project-stu\meshviewer\mesh\read_write\read_write.cpp(24): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\stdio.h(205): note: 参见“fopen”的声明
-         e:\学习\计算机图形学\meshviewer_project-stu\meshviewer\mesh\read_write\read_write.cpp(16): note: 编译类 模板 成员函数“bool MeshN::ReaderWriterT<MyMesh>::off_reader(const char *)”时
-         e:\学习\计算机图形学\meshviewer_project-stu\meshviewer\meshinterface.h(42): note: 参见对正在编译的函数 模板 实例化“bool MeshN::ReaderWriterT<MyMesh>::off_reader(const char *)”的引用
-         e:\学习\计算机图形学\meshviewer_project-stu\meshviewer\meshinterface.h(31): note: 参见对正在编译的类 模板 实例化“MeshN::ReaderWriterT<MyMesh>”的引用
-     1>e:\学习\计算机图形学\meshviewer_project-stu\meshviewer\mesh\read_write\read_write.cpp(36): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\stdio.h(1193): note: 参见“fscanf”的声明
-     1>e:\学习\计算机图形学\meshviewer_project-stu\meshviewer\mesh\read_write\read_write.cpp(43): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\stdio.h(1193): note: 参见“fscanf”的声明
-     1>e:\学习\计算机图形学\meshviewer_project-stu\meshviewer\mesh\read_write\read_write.cpp(51): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\stdio.h(1193): note: 参见“fscanf”的声明
-     1>e:\学习\计算机图形学\meshviewer_project-stu\meshviewer\mesh\read_write\read_write.cpp(57): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\stdio.h(1193): note: 参见“fscanf”的声明
-     1>e:\学习\计算机图形学\meshviewer_project-stu\meshviewer\mesh\extension\exkernelt.cpp(541): warning C4018: “<”: 有符号/无符号不匹配
-         e:\学习\计算机图形学\meshviewer_project-stu\meshviewer\mesh\extension\exkernelt.cpp(502): note: 编译类 模板 成员函数“void MeshN::ExKernelT<MeshN::ExItems>::adjustFaceNormal_FE(void)”时
-         e:\学习\计算机图形学\meshviewer_project-stu\meshviewer\mesh\extension\exkernelt.cpp(586): note: 参见对正在编译的函数 模板 实例化“void MeshN::ExKernelT<MeshN::ExItems>::adjustFaceNormal_FE(void)”的引用
-         e:\学习\计算机图形学\meshviewer_project-stu\meshviewer\mesh\extension\exkernelt.cpp(10): note: 编译类 模板 成员函数“MeshN::ExKernelT<MeshN::ExItems>::ExKernelT(void)”时
-         e:\学习\计算机图形学\meshviewer_project-stu\meshviewer\meshinterface.h(30): note: 参见对正在编译的函数 模板 实例化“MeshN::ExKernelT<MeshN::ExItems>::ExKernelT(void)”的引用
-     1>e:\学习\计算机图形学\meshviewer_project-stu\meshviewer\mesh\extension\exkernelt.cpp(543): warning C4018: “>=”: 有符号/无符号不匹配
-     1>e:\学习\计算机图形学\meshviewer_project-stu\meshviewer\mesh\extension\exkernelt.cpp(552): warning C4018: “<”: 有符号/无符号不匹配
-     1>e:\学习\计算机图形学\meshviewer_project-stu\meshviewer\mesh\extension\exkernelt.cpp(679): warning C4018: “<”: 有符号/无符号不匹配
-         e:\学习\计算机图形学\meshviewer_project-stu\meshviewer\mesh\extension\exkernelt.cpp(637): note: 编译类 模板 成员函数“void MeshN::ExKernelT<MeshN::ExItems>::adjustFaceNormal_YouyiZheng(void)”时
-         e:\学习\计算机图形学\meshviewer_project-stu\meshviewer\mesh\extension\exkernelt.cpp(716): note: 参见对正在编译的函数 模板 实例化“void MeshN::ExKernelT<MeshN::ExItems>::adjustFaceNormal_YouyiZheng(void)”的引用
-     1>e:\学习\计算机图形学\meshviewer_project-stu\meshviewer\mesh\extension\exkernelt.cpp(640): warning C4101: “MinSigmaS”: 未引用的局部变量
-     1>e:\学习\计算机图形学\meshviewer_project-stu\meshviewer\mesh\extension\exkernelt.cpp(200): warning C4018: “<”: 有符号/无符号不匹配
-         e:\学习\计算机图形学\meshviewer_project-stu\meshviewer\mesh\extension\exkernelt.cpp(176): note: 编译类 模板 成员函数“void MeshN::ExKernelT<MeshN::ExItems>::getNeighborFaceN2(MeshN::InternalHandles::FacetHandle &,std::vector<MeshN::InternalHandles::FacetHandle,std::allocator<_Ty>> &)”时
-                 with
-                 [
-                     _Ty=MeshN::InternalHandles::FacetHandle
-                 ]
-         e:\学习\计算机图形学\meshviewer_project-stu\meshviewer\mesh\extension\exkernelt.cpp(674): note: 参见对正在编译的函数 模板 实例化“void MeshN::ExKernelT<MeshN::ExItems>::getNeighborFaceN2(MeshN::InternalHandles::FacetHandle &,std::vector<MeshN::InternalHandles::FacetHandle,std::allocator<_Ty>> &)”的引用
-                 with
-                 [
-                     _Ty=MeshN::InternalHandles::FacetHandle
-                 ]
-         e:\学习\计算机图形学\meshviewer_project-stu\meshviewer\mesh\extension\exkernelt.cpp(261): note: 编译类 模板 成员函数“MathN::Vector3T<float> MeshN::ExKernelT<MeshN::ExItems>::normal(const MeshN::InternalHandles::FacetHandle &)”时
-         e:\学习\计算机图形学\meshviewer_project-stu\meshviewer\mesh\read_write\read_write.cpp(92): note: 参见对正在编译的函数 模板 实例化“MathN::Vector3T<float> MeshN::ExKernelT<MeshN::ExItems>::normal(const MeshN::InternalHandles::FacetHandle &)”的引用
-     1>e:\学习\计算机图形学\meshviewer_project-stu\meshviewer\mesh\extension\exkernelt.cpp(205): warning C4018: “>=”: 有符号/无符号不匹配
-     1>e:\学习\计算机图形学\meshviewer_project-stu\meshviewer\mesh\core\kernelt.cpp(707): warning C4018: “<”: 有符号/无符号不匹配
-         e:\学习\计算机图形学\meshviewer_project-stu\meshviewer\mesh\core\kernelt.cpp(706): note: 编译类 模板 成员函数“MeshN::InternalHandles::HalfedgeHandle MeshN::KernelT<ExItems>::_find_halfedge_handle(const MeshN::InternalHandles::VertexHandle &,const MeshN::InternalHandles::VertexHandle &)”时
-                 with
-                 [
-                     ExItems=MeshN::ExItems
-                 ]
-         e:\学习\计算机图形学\meshviewer_project-stu\meshviewer\mesh\core\kernelt.cpp(573): note: 参见对正在编译的函数 模板 实例化“MeshN::InternalHandles::HalfedgeHandle MeshN::KernelT<ExItems>::_find_halfedge_handle(const MeshN::InternalHandles::VertexHandle &,const MeshN::InternalHandles::VertexHandle &)”的引用
-                 with
-                 [
-                     ExItems=MeshN::ExItems
-                 ]
          ExKernelT.cpp
          正在生成代码...
+         正在编译...
+         meshviewer.cpp
+     1>e:\学习\计算机图形学\final_project_stu\meshviewer_project-stu\meshviewer\viewer\viewercallbacks.h(88): warning C4838: 从“double”转换到“GLfloat”需要收缩转换
+     1>e:\学习\计算机图形学\final_project_stu\meshviewer_project-stu\meshviewer\viewer\viewercallbacks.h(89): warning C4838: 从“double”转换到“GLfloat”需要收缩转换
+     1>e:\学习\计算机图形学\final_project_stu\meshviewer_project-stu\meshviewer\viewer\viewercallbacks.h(90): warning C4838: 从“double”转换到“GLfloat”需要收缩转换
+     1>e:\学习\计算机图形学\final_project_stu\meshviewer_project-stu\meshviewer\viewer\viewercallbacks.h(92): warning C4838: 从“double”转换到“GLfloat”需要收缩转换
+     1>e:\学习\计算机图形学\final_project_stu\meshviewer_project-stu\meshviewer\viewer\viewercallbacks.h(93): warning C4838: 从“double”转换到“GLfloat”需要收缩转换
+     1>e:\学习\计算机图形学\final_project_stu\meshviewer_project-stu\meshviewer\viewer\viewercallbacks.h(94): warning C4838: 从“double”转换到“GLfloat”需要收缩转换
+     1>e:\学习\计算机图形学\final_project_stu\meshviewer_project-stu\meshviewer\mesh\extension\exkernelt.cpp(314): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\stdio.h(205): note: 参见“fopen”的声明
+         e:\学习\计算机图形学\final_project_stu\meshviewer_project-stu\meshviewer\mesh\extension\exkernelt.cpp(311): note: 编译类 模板 成员函数“void MeshN::ExKernelT<MeshN::ExItems>::output_to_file(void)”时
+         e:\学习\计算机图形学\final_project_stu\meshviewer_project-stu\meshviewer\meshinterface.h(92): note: 参见对正在编译的函数 模板 实例化“void MeshN::ExKernelT<MeshN::ExItems>::output_to_file(void)”的引用
+         e:\学习\计算机图形学\final_project_stu\meshviewer_project-stu\meshviewer\meshinterface.h(30): note: 参见对正在编译的类 模板 实例化“MeshN::ExKernelT<MeshN::ExItems>”的引用
+     1>e:\学习\计算机图形学\final_project_stu\meshviewer_project-stu\meshviewer\mesh\read_write\read_write.cpp(24): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\stdio.h(205): note: 参见“fopen”的声明
+         e:\学习\计算机图形学\final_project_stu\meshviewer_project-stu\meshviewer\mesh\read_write\read_write.cpp(16): note: 编译类 模板 成员函数“bool MeshN::ReaderWriterT<MyMesh>::off_reader(const char *)”时
+         e:\学习\计算机图形学\final_project_stu\meshviewer_project-stu\meshviewer\meshinterface.h(42): note: 参见对正在编译的函数 模板 实例化“bool MeshN::ReaderWriterT<MyMesh>::off_reader(const char *)”的引用
+         e:\学习\计算机图形学\final_project_stu\meshviewer_project-stu\meshviewer\meshinterface.h(31): note: 参见对正在编译的类 模板 实例化“MeshN::ReaderWriterT<MyMesh>”的引用
+     1>e:\学习\计算机图形学\final_project_stu\meshviewer_project-stu\meshviewer\mesh\read_write\read_write.cpp(36): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\stdio.h(1193): note: 参见“fscanf”的声明
+     1>e:\学习\计算机图形学\final_project_stu\meshviewer_project-stu\meshviewer\mesh\read_write\read_write.cpp(43): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\stdio.h(1193): note: 参见“fscanf”的声明
+     1>e:\学习\计算机图形学\final_project_stu\meshviewer_project-stu\meshviewer\mesh\read_write\read_write.cpp(51): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\stdio.h(1193): note: 参见“fscanf”的声明
+     1>e:\学习\计算机图形学\final_project_stu\meshviewer_project-stu\meshviewer\mesh\read_write\read_write.cpp(57): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\stdio.h(1193): note: 参见“fscanf”的声明
+     1>e:\学习\计算机图形学\final_project_stu\meshviewer_project-stu\meshviewer\mesh\extension\exkernelt.cpp(633): warning C4018: “<”: 有符号/无符号不匹配
+         e:\学习\计算机图形学\final_project_stu\meshviewer_project-stu\meshviewer\mesh\extension\exkernelt.cpp(594): note: 编译类 模板 成员函数“void MeshN::ExKernelT<MeshN::ExItems>::adjustFaceNormal_FE(void)”时
+         e:\学习\计算机图形学\final_project_stu\meshviewer_project-stu\meshviewer\mesh\extension\exkernelt.cpp(678): note: 参见对正在编译的函数 模板 实例化“void MeshN::ExKernelT<MeshN::ExItems>::adjustFaceNormal_FE(void)”的引用
+         e:\学习\计算机图形学\final_project_stu\meshviewer_project-stu\meshviewer\mesh\extension\exkernelt.cpp(10): note: 编译类 模板 成员函数“MeshN::ExKernelT<MeshN::ExItems>::ExKernelT(void)”时
+         e:\学习\计算机图形学\final_project_stu\meshviewer_project-stu\meshviewer\meshinterface.h(30): note: 参见对正在编译的函数 模板 实例化“MeshN::ExKernelT<MeshN::ExItems>::ExKernelT(void)”的引用
+     1>e:\学习\计算机图形学\final_project_stu\meshviewer_project-stu\meshviewer\mesh\extension\exkernelt.cpp(635): warning C4018: “>=”: 有符号/无符号不匹配
+     1>e:\学习\计算机图形学\final_project_stu\meshviewer_project-stu\meshviewer\mesh\extension\exkernelt.cpp(644): warning C4018: “<”: 有符号/无符号不匹配
+     1>e:\学习\计算机图形学\final_project_stu\meshviewer_project-stu\meshviewer\mesh\extension\exkernelt.cpp(771): warning C4018: “<”: 有符号/无符号不匹配
+         e:\学习\计算机图形学\final_project_stu\meshviewer_project-stu\meshviewer\mesh\extension\exkernelt.cpp(729): note: 编译类 模板 成员函数“void MeshN::ExKernelT<MeshN::ExItems>::adjustFaceNormal_YouyiZheng(void)”时
+         e:\学习\计算机图形学\final_project_stu\meshviewer_project-stu\meshviewer\mesh\extension\exkernelt.cpp(808): note: 参见对正在编译的函数 模板 实例化“void MeshN::ExKernelT<MeshN::ExItems>::adjustFaceNormal_YouyiZheng(void)”的引用
+     1>e:\学习\计算机图形学\final_project_stu\meshviewer_project-stu\meshviewer\mesh\extension\exkernelt.cpp(732): warning C4101: “MinSigmaS”: 未引用的局部变量
+     1>e:\学习\计算机图形学\final_project_stu\meshviewer_project-stu\meshviewer\mesh\extension\exkernelt.cpp(292): warning C4018: “<”: 有符号/无符号不匹配
+         e:\学习\计算机图形学\final_project_stu\meshviewer_project-stu\meshviewer\mesh\extension\exkernelt.cpp(268): note: 编译类 模板 成员函数“void MeshN::ExKernelT<MeshN::ExItems>::getNeighborFaceN2(MeshN::InternalHandles::FacetHandle &,std::vector<MeshN::InternalHandles::FacetHandle,std::allocator<_Ty>> &)”时
+                 with
+                 [
+                     _Ty=MeshN::InternalHandles::FacetHandle
+                 ]
+         e:\学习\计算机图形学\final_project_stu\meshviewer_project-stu\meshviewer\mesh\extension\exkernelt.cpp(766): note: 参见对正在编译的函数 模板 实例化“void MeshN::ExKernelT<MeshN::ExItems>::getNeighborFaceN2(MeshN::InternalHandles::FacetHandle &,std::vector<MeshN::InternalHandles::FacetHandle,std::allocator<_Ty>> &)”的引用
+                 with
+                 [
+                     _Ty=MeshN::InternalHandles::FacetHandle
+                 ]
+         e:\学习\计算机图形学\final_project_stu\meshviewer_project-stu\meshviewer\mesh\extension\exkernelt.cpp(353): note: 编译类 模板 成员函数“MathN::Vector3T<float> MeshN::ExKernelT<MeshN::ExItems>::normal(const MeshN::InternalHandles::FacetHandle &)”时
+         e:\学习\计算机图形学\final_project_stu\meshviewer_project-stu\meshviewer\mesh\read_write\read_write.cpp(92): note: 参见对正在编译的函数 模板 实例化“MathN::Vector3T<float> MeshN::ExKernelT<MeshN::ExItems>::normal(const MeshN::InternalHandles::FacetHandle &)”的引用
+     1>e:\学习\计算机图形学\final_project_stu\meshviewer_project-stu\meshviewer\mesh\extension\exkernelt.cpp(297): warning C4018: “>=”: 有符号/无符号不匹配
+     1>e:\学习\计算机图形学\final_project_stu\meshviewer_project-stu\meshviewer\mesh\core\kernelt.cpp(707): warning C4018: “<”: 有符号/无符号不匹配
+         e:\学习\计算机图形学\final_project_stu\meshviewer_project-stu\meshviewer\mesh\core\kernelt.cpp(706): note: 编译类 模板 成员函数“MeshN::InternalHandles::HalfedgeHandle MeshN::KernelT<ExItems>::_find_halfedge_handle(const MeshN::InternalHandles::VertexHandle &,const MeshN::InternalHandles::VertexHandle &)”时
+                 with
+                 [
+                     ExItems=MeshN::ExItems
+                 ]
+         e:\学习\计算机图形学\final_project_stu\meshviewer_project-stu\meshviewer\mesh\core\kernelt.cpp(573): note: 参见对正在编译的函数 模板 实例化“MeshN::InternalHandles::HalfedgeHandle MeshN::KernelT<ExItems>::_find_halfedge_handle(const MeshN::InternalHandles::VertexHandle &,const MeshN::InternalHandles::VertexHandle &)”的引用
+                 with
+                 [
+                     ExItems=MeshN::ExItems
+                 ]
+         正在生成代码...
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\学习\计算机图形学\meshviewer_project-stu\Debug\Meshviewer.exe" /INCREMENTAL /NOLOGO /LIBPATH:F:\Meshviewer\Meshviewer\mesh\read_write /LIBPATH:F:\Meshviewer\Meshviewer\mesh\extension /LIBPATH:F:\Meshviewer\Meshviewer\mesh\core kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\Meshviewer.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /Debug /PDB:"E:\学习\计算机图形学\meshviewer_project-stu\Debug\Meshviewer.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\学习\计算机图形学\meshviewer_project-stu\Debug\Meshviewer.lib" /MACHINE:X86 Debug\meshviewer.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\学习\计算机图形学\Final_Project_STU\meshviewer_project-stu\Debug\Meshviewer.exe" /INCREMENTAL /NOLOGO /LIBPATH:F:\Meshviewer\Meshviewer\mesh\read_write /LIBPATH:F:\Meshviewer\Meshviewer\mesh\extension /LIBPATH:F:\Meshviewer\Meshviewer\mesh\core kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\Meshviewer.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /Debug /PDB:"E:\学习\计算机图形学\Final_Project_STU\meshviewer_project-stu\Debug\Meshviewer.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\学习\计算机图形学\Final_Project_STU\meshviewer_project-stu\Debug\Meshviewer.lib" /MACHINE:X86 Debug\meshviewer.obj
          Debug\BaseHandle.obj
          Debug\KernelT.obj
          Debug\ExKernelT.obj
          Debug\read_write.obj
-         Meshviewer.vcxproj -> E:\学习\计算机图形学\meshviewer_project-stu\Debug\Meshviewer.exe
+         Meshviewer.vcxproj -> E:\学习\计算机图形学\Final_Project_STU\meshviewer_project-stu\Debug\Meshviewer.exe
        Manifest:
-         C:\Program Files (x86)\Windows Kits\8.1\bin\x86\mt.exe /nologo /verbose /out:"E:\学习\计算机图形学\meshviewer_project-stu\Debug\Meshviewer.exe.manifest" /manifest Debug\Meshviewer.exe.intermediate.manifest
-     1>已完成生成项目“E:\学习\计算机图形学\meshviewer_project-stu\Meshviewer\Meshviewer.vcxproj”(Build 个目标)的操作。
+         C:\Program Files (x86)\Windows Kits\8.1\bin\x86\mt.exe /nologo /verbose /out:"E:\学习\计算机图形学\Final_Project_STU\meshviewer_project-stu\Debug\Meshviewer.exe.manifest" /manifest Debug\Meshviewer.exe.intermediate.manifest
+     1>已完成生成项目“E:\学习\计算机图形学\Final_Project_STU\meshviewer_project-stu\Meshviewer\Meshviewer.vcxproj”(Build 个目标)的操作。
 
 已成功生成。
 
-已用时间 00:00:04.19
+已用时间 00:00:03.26

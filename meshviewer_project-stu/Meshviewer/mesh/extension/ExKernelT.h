@@ -78,6 +78,8 @@ namespace MeshN {
 		// normals of vertices
 		inline Normal normal(const VertexHandle& _vh);///////get the normal from _vh
 
+		//inline Coord halfedge_vector(const HalfedgeHandle& _hh);/////////////////获取半边向量（自己添加）
+
 		inline Normal calc_normal_max(const VertexHandle& _vh);
 		
 		void   update_vertex_normals(void);//////计算所有顶点的法向值
@@ -108,6 +110,7 @@ namespace MeshN {
 ///////////////以下为两种三角网格去噪算法//////////////////////////////////////////////
 		void adjustFaceNormal_FE();//根据Sun Xianfang TVCG2007方法调整面法向
 		void adjustFaceNormal_YouyiZheng();//Based on Youyi Zheng TVCG 2011
+		void adjustFaceNormal_MY();
 
 		void Mesh_Denoising_FE();//Xianfang Sun, TVCG2007, fast and effective feature-preserving mesh denoising
 		void Mesh_Denoising_YouyiZheng();//Based on Youyi Zheng TVCG 2011

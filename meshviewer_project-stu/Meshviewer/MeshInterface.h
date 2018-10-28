@@ -51,6 +51,7 @@ void MyMeshInit(void) { //
 ///////////////显示模型和面片法向////////////////
 
 		glNewList(25, GL_COMPILE);
+		reader.ogl_writer(0, 1);			//增加模型显示
 		reader.ogl_writer2(0, 1);
 		glEndList();
 //////////////////////////////////////////////
@@ -70,6 +71,7 @@ void MyMeshInit(void) { //
 			mesh.Mesh_Denoising_YouyiZheng();
 		else if (choice == 3)
 			mesh.Laplacian_Smoothing();
+			//mesh.mesh_process();
 		std::cout << "去噪执行完毕!!!" << std::endl;
 		std::cout << "按 b 可以查看去噪结果" << std::endl;
 
@@ -78,6 +80,13 @@ void MyMeshInit(void) { //
 	reader.ogl_writer(0, 1);
 	glEndList();
 
+	//////////////自定义网格操作///////////////////
+	/*glNewList(26, GL_COMPILE);
+	mesh.mesh_process();
+	reader.ogl_writer(0, 1);
+	glEndList();*/
+
+	///////////////////////////////////////////////
 
 
 	mesh.output_to_file();

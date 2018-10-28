@@ -36,18 +36,110 @@ namespace MeshN {
 	}
 
 	///////////////////////////////////////////////////////////////////////////////
-
 	template<class ExItems>
 	void ExKernelT<ExItems>::Laplacian_Smoothing(){
 
 		/////请实现自己的去噪算法////////
+
+		int vertex_num = vertex_size();
+		int iterations;
+		std::cout << "Input laplacian vertex update iterations(5-30次): ";
+		std::cin >> iterations;
+		int i = 0;
+		std::cout << "由于迭代，比较耗时！" << std::endl;
+		std::cout << "Please wait.....  " << std::endl;
+		clock_t t1 = clock();
+		do {
+			std::vector<Coord> updateVertexPosition;
+			updateVertexPosition.resize(vertex_num);
+			VertexIterator vi(vertex_begin());
+			for (i=0; vi != vertex_end(); vi++) {
+				HalfedgeHandle& hh = vi->halfedge_handle_;
+				HalfedgeHandle css(opposite_halfedge_handle(hh));
+				int j = 0;
+				//Coord cd(0, 0, 0);
+				do {
+					updateVertexPosition[i] += coord(vertex_handle(css));
+					//cd += coord(vertex_handle(css));
+					j++;
+					css = opposite_halfedge_handle(prev_halfedge_handle(css));
+				} while (opposite_halfedge_handle(css) != hh);
+				updateVertexPosition[i] /= j;
+				i++;
+				//updateVertexPosition.push_back(cd/j);
+			}
+			i = 0;
+			//std::vector<Coord>::iterator vpi = updateVertexPosition.begin();
+			for (vi = vertex_begin(); vi != vertex_end(); vi++) {
+				vi->coord_ = updateVertexPosition[i];
+				i++;
+				//vpi++;
+			}
+		} while (--iterations);
+
+		clock_t t2 = clock();
+		//t2 = (t2-t1)/CLOCKS_PER_SEC;
+		std::cout << "The time of laplacian vertex updating: " << (t2 - t1)*1.0 / CLOCKS_PER_SEC << "s" << std::endl;
 	}
 
 ////////////////////////////////////////////////////////////////////////////////////
 	template<class ExItems>
 	void ExKernelT<ExItems>::mesh_process(){///////(可选，在三角网格上实现一种操作，例如特征提取，网格分割，三角网格变形等等)
 
+		int vertex_num = vertex_size();
+		int iterations;
+		std::cout << "Input sharpening vertex update iterations(1-30次): ";
+		std::cin >> iterations;
+		int i = 0;
+		std::cout << "由于迭代，比较耗时！" << std::endl;
+		std::cout << "Please wait.....  " << std::endl;
+		clock_t t1 = clock();
+		do {
+			std::vector<Coord> updateVertexPosition;
+			updateVertexPosition.resize(vertex_num);
+			VertexIterator vi(vertex_begin());
+			for (i = 0; vi != vertex_end(); vi++) {
+				HalfedgeHandle& hh = vi->halfedge_handle_;
+				HalfedgeHandle css(opposite_halfedge_handle(hh));
+				int j = 0;
+				//Coord cd(0, 0, 0);
+				do {
+					updateVertexPosition[i] += coord(vertex_handle(css));
+					//cd += coord(vertex_handle(css));
+					j++;
+					css = opposite_halfedge_handle(prev_halfedge_handle(css));
+				} while (opposite_halfedge_handle(css) != hh);
+				updateVertexPosition[i] -= coord(vertex_handle(hh))*j;
+				i++;
+				//updateVertexPosition.push_back(cd/j);
+			}
+			i = 0;
+			//std::vector<Coord>::iterator vpi = updateVertexPosition.begin();
+			for (vi = vertex_begin(); vi != vertex_end(); vi++) {
+				vi->coord_ += updateVertexPosition[i];
+				i++;
+				//vpi++;
+			}
+		} while (--iterations);
+
+		clock_t t2 = clock();
+		//t2 = (t2-t1)/CLOCKS_PER_SEC;
+		std::cout << "The time of sharpening vertex updating: " << (t2 - t1)*1.0 / CLOCKS_PER_SEC << "s" << std::endl;
 	}
+
+////////////////////////////////////////////////////////////////////////////////////
+	//template<class ExItems>
+	//typename ExKernelT<ExItems>::Coord
+	//	ExKernelT<ExItems>::halfedge_vector(const HalfedgeHandle& _hh) {/////获取半边向量（自己添加）
+
+	//	Vertex v0 = vertex_ref(vertex_handle(_hh));
+	//	Vertex v1 = vertex_ref(vertex_handle(opposite_halfedge_handle(_hh)));
+
+	//	//Normal n0(v1.coord_-v0.coord_);
+
+	//	return v1.coord_ - v0.coord_;
+	//}
+////////////////////////////////////////////////////////////////////////////////////
 
 ////////////////////////////////////////////////////////////////////////////////////
 	template<class ExItems>

@@ -103,7 +103,39 @@ namespace MeshN {
 	///////////////////////////////////////////////////////////////////////////// 
 	template <class Mesh>
 	bool ReaderWriterT<Mesh>::ogl_writer2(bool _orient, bool _smooth){////在里面把三角面片法向画出
+		HalfedgeHandle       cshh;
+		Mesh::FacetIterator  fit(mesh_->facet_begin());
 
+			//glShadeModel(GL_FLAT);
+			glShadeModel(GL_SMOOTH);
+			int orient = true;// (_orient) ? 1 : -1; 
+			mesh_->update_normals();					//计算面法向和点法向
+
+			for (; fit != mesh_->facet_end(); ++fit) {
+
+				if ((*fit).status_.is_deleted()) continue;
+
+				cshh = fit->halfedge_handle_;
+				FacetHandle fh = mesh_->facet_handle(cshh);
+				const VertexHandle& vh0 = mesh_->vertex_handle(cshh);
+				glColor3f(1.0, 0.0, 0.0);
+				glBegin(GL_LINES);
+				do {
+					const VertexHandle& vh = mesh_->vertex_handle(cshh);
+
+					//glNormal3fv(mesh_->normal(fh)*orient);
+					//glVertex3fv(mesh_->coord(vh));
+					cshh = mesh_->next_halfedge_handle(cshh);
+					
+					glVertex3fv(mesh_->calc_centroid(fh));
+					glVertex3fv(mesh_->calc_centroid(fh) + mesh_->normal(fh) / 10);
+					
+					//glColor3f(0.0, 1.0, 0.0);
+					//glVertex3fv(mesh_->coord(vh));
+					//glVertex3fv(mesh_->coord(vh) + mesh_->normal(vh)/10);
+				} while (cshh != fit->halfedge_handle_);
+				glEnd();
+			}
 
 		return true;
 	}
